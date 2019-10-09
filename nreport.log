@@ -1,0 +1,247 @@
+2019-10-09 21:43:02 - [INFO ][nReporter.core.NConfiguration / setReportTemplate] - Report template path: C:\Projects\n-reporter\src\main\resources\templates\report.ftlh
+2019-10-09 21:43:02 - [INFO ][nReporter.core.NConfiguration / <init>] - Initialised report configuration.
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / <init>] - Report initialised.
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / setSystemInfo] - New System info added. Key: Project - value: STAN project
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / setSystemInfo] - New System info added. Key: User - value: kelechi.nelson
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / setSystemInfo] - New System info added. Key: Version - value: 1.4.0.30
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / setStartTime] - Report start time: 2019-10-09T21:43:02.778+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / <init>] - New Test added. Name: Test name - description: Test Description - Test Start Time: 2019-10-09T21:43:02.778+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / createTest] - New Test created. Name: Test name - description: Test Description - Timestamp: 2019-10-09T21:43:02.778+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setCategory] - Set Test 'Test name' category toRegression
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTag / <init>] - New tag added. Name: tag 1 - description: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTag / <init>] - New tag added. Name: Tag2 - description: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / assignTags] - Assigned tag(s): [LnReporter.models.NTag;@233795b6
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.843+02:00 - Status: PASS - message: Pass message - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test name. Timestamp: 2019-10-09T21:43:02.843+02:00 - status: PASS - message: Pass message - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test name' status to 'PASS'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.843+02:00, test execution time: 0d 0h 0m 0s+65ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.865+02:00 - Status: PASS - message: Pass with screenshot - screenshot: https://dummyimage.com/600x400/000/fff&text=Passed__2.png - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test name. Timestamp: 2019-10-09T21:43:02.865+02:00 - status: PASS - message: Pass with screenshot - screenshot: https://dummyimage.com/600x400/000/fff&text=Passed__2.png - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test name' status to 'PASS'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.865+02:00, test execution time: 0d 0h 0m 0s+87ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / <init>] - New Test added. Name: Test 2 - description: Test 2 description - Test Start Time: 2019-10-09T21:43:02.867+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / createTest] - New Test created. Name: Test 2 - description: Test 2 description - Timestamp: 2019-10-09T21:43:02.867+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.868+02:00 - Status: FAIL - message: Message - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test 2. Timestamp: 2019-10-09T21:43:02.868+02:00 - status: FAIL - message: Message - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test 2' status to 'FAIL'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.868+02:00, test execution time: 0d 0h 0m 0s+1ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.870+02:00 - Status: FAIL - message: Fail message with Throwable option - screenshot: https://dummyimage.com/600x400/000/fff&text=Passed__2.png - Exception: java.lang.Exception: Testing expection message.
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test 2. Timestamp: 2019-10-09T21:43:02.870+02:00 - status: FAIL - message: Fail message with Throwable option - screenshot: https://dummyimage.com/600x400/000/fff&text=Passed__2.png - Exception: java.lang.Exception: Testing expection message.
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test 2' status to 'FAIL'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.870+02:00, test execution time: 0d 0h 0m 0s+3ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.871+02:00 - Status: SKIP - message: Skipping - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test 2. Timestamp: 2019-10-09T21:43:02.871+02:00 - status: SKIP - message: Skipping - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test 2' status to 'FAIL'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.871+02:00, test execution time: 0d 0h 0m 0s+4ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / <init>] - New Test added. Name: Test Name 0 - description: Test Description 0 - Test Start Time: 2019-10-09T21:43:02.874+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / createTest] - New Test created. Name: Test Name 0 - description: Test Description 0 - Timestamp: 2019-10-09T21:43:02.874+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTag / <init>] - New tag added. Name: Tag for test0 - description: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / assignTags] - Assigned tag(s): [LnReporter.models.NTag;@7bedc48a
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setCategory] - Set Test 'Test Name 0' category toCategory 0
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.877+02:00 - Status: INFO - message: Info message for test 0 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 0. Timestamp: 2019-10-09T21:43:02.877+02:00 - status: INFO - message: Info message for test 0 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 0' status to 'INFO'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.877+02:00, test execution time: 0d 0h 0m 0s+3ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.881+02:00 - Status: WARN - message: Warning message from Test0 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 0. Timestamp: 2019-10-09T21:43:02.881+02:00 - status: WARN - message: Warning message from Test0 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 0' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.881+02:00, test execution time: 0d 0h 0m 0s+7ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.883+02:00 - Status: PASS - message: pass message for test 0 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 0. Timestamp: 2019-10-09T21:43:02.883+02:00 - status: PASS - message: pass message for test 0 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 0' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.883+02:00, test execution time: 0d 0h 0m 0s+9ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.886+02:00 - Status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 0
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 0. Timestamp: 2019-10-09T21:43:02.886+02:00 - status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 0
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 0' status to 'FATAL'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.886+02:00, test execution time: 0d 0h 0m 0s+12ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / <init>] - New Test added. Name: Test Name 1 - description: Test Description 1 - Test Start Time: 2019-10-09T21:43:02.887+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / createTest] - New Test created. Name: Test Name 1 - description: Test Description 1 - Timestamp: 2019-10-09T21:43:02.887+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTag / <init>] - New tag added. Name: Tag for test1 - description: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / assignTags] - Assigned tag(s): [LnReporter.models.NTag;@2de23121
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setCategory] - Set Test 'Test Name 1' category toCategory 1
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.889+02:00 - Status: INFO - message: Info message for test 1 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 1. Timestamp: 2019-10-09T21:43:02.889+02:00 - status: INFO - message: Info message for test 1 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 1' status to 'INFO'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.889+02:00, test execution time: 0d 0h 0m 0s+2ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.891+02:00 - Status: WARN - message: Warning message from Test1 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 1. Timestamp: 2019-10-09T21:43:02.891+02:00 - status: WARN - message: Warning message from Test1 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 1' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.891+02:00, test execution time: 0d 0h 0m 0s+4ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.892+02:00 - Status: PASS - message: pass message for test 1 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 1. Timestamp: 2019-10-09T21:43:02.892+02:00 - status: PASS - message: pass message for test 1 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 1' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.892+02:00, test execution time: 0d 0h 0m 0s+5ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.893+02:00 - Status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 1
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 1. Timestamp: 2019-10-09T21:43:02.893+02:00 - status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 1
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 1' status to 'FATAL'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.893+02:00, test execution time: 0d 0h 0m 0s+6ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / <init>] - New Test added. Name: Test Name 2 - description: Test Description 2 - Test Start Time: 2019-10-09T21:43:02.895+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / createTest] - New Test created. Name: Test Name 2 - description: Test Description 2 - Timestamp: 2019-10-09T21:43:02.895+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTag / <init>] - New tag added. Name: Tag for test2 - description: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / assignTags] - Assigned tag(s): [LnReporter.models.NTag;@394df057
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setCategory] - Set Test 'Test Name 2' category toCategory 2
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.897+02:00 - Status: INFO - message: Info message for test 2 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 2. Timestamp: 2019-10-09T21:43:02.897+02:00 - status: INFO - message: Info message for test 2 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 2' status to 'INFO'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.897+02:00, test execution time: 0d 0h 0m 0s+2ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.904+02:00 - Status: WARN - message: Warning message from Test2 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 2. Timestamp: 2019-10-09T21:43:02.904+02:00 - status: WARN - message: Warning message from Test2 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 2' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.904+02:00, test execution time: 0d 0h 0m 0s+9ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.906+02:00 - Status: PASS - message: pass message for test 2 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 2. Timestamp: 2019-10-09T21:43:02.906+02:00 - status: PASS - message: pass message for test 2 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 2' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.906+02:00, test execution time: 0d 0h 0m 0s+11ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.908+02:00 - Status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 2
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 2. Timestamp: 2019-10-09T21:43:02.908+02:00 - status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 2
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 2' status to 'FATAL'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.908+02:00, test execution time: 0d 0h 0m 0s+13ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / <init>] - New Test added. Name: Test Name 3 - description: Test Description 3 - Test Start Time: 2019-10-09T21:43:02.910+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / createTest] - New Test created. Name: Test Name 3 - description: Test Description 3 - Timestamp: 2019-10-09T21:43:02.910+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTag / <init>] - New tag added. Name: Tag for test3 - description: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / assignTags] - Assigned tag(s): [LnReporter.models.NTag;@26b3fd41
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setCategory] - Set Test 'Test Name 3' category toCategory 3
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.911+02:00 - Status: INFO - message: Info message for test 3 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 3. Timestamp: 2019-10-09T21:43:02.911+02:00 - status: INFO - message: Info message for test 3 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 3' status to 'INFO'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.911+02:00, test execution time: 0d 0h 0m 0s+1ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.913+02:00 - Status: WARN - message: Warning message from Test3 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 3. Timestamp: 2019-10-09T21:43:02.913+02:00 - status: WARN - message: Warning message from Test3 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 3' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.913+02:00, test execution time: 0d 0h 0m 0s+3ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.915+02:00 - Status: PASS - message: pass message for test 3 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 3. Timestamp: 2019-10-09T21:43:02.915+02:00 - status: PASS - message: pass message for test 3 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 3' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.915+02:00, test execution time: 0d 0h 0m 0s+5ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.916+02:00 - Status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 3
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 3. Timestamp: 2019-10-09T21:43:02.916+02:00 - status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 3
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 3' status to 'FATAL'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.916+02:00, test execution time: 0d 0h 0m 0s+6ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / <init>] - New Test added. Name: Test Name 4 - description: Test Description 4 - Test Start Time: 2019-10-09T21:43:02.918+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / createTest] - New Test created. Name: Test Name 4 - description: Test Description 4 - Timestamp: 2019-10-09T21:43:02.918+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTag / <init>] - New tag added. Name: Tag for test4 - description: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / assignTags] - Assigned tag(s): [LnReporter.models.NTag;@4e3958e7
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setCategory] - Set Test 'Test Name 4' category toCategory 4
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.920+02:00 - Status: INFO - message: Info message for test 4 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 4. Timestamp: 2019-10-09T21:43:02.920+02:00 - status: INFO - message: Info message for test 4 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 4' status to 'INFO'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.920+02:00, test execution time: 0d 0h 0m 0s+2ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.923+02:00 - Status: WARN - message: Warning message from Test4 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 4. Timestamp: 2019-10-09T21:43:02.923+02:00 - status: WARN - message: Warning message from Test4 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 4' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.923+02:00, test execution time: 0d 0h 0m 0s+5ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.927+02:00 - Status: PASS - message: pass message for test 4 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 4. Timestamp: 2019-10-09T21:43:02.927+02:00 - status: PASS - message: pass message for test 4 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 4' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.927+02:00, test execution time: 0d 0h 0m 0s+9ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.929+02:00 - Status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 4
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 4. Timestamp: 2019-10-09T21:43:02.929+02:00 - status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 4
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 4' status to 'FATAL'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.929+02:00, test execution time: 0d 0h 0m 0s+11ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / <init>] - New Test added. Name: Test Name 5 - description: Test Description 5 - Test Start Time: 2019-10-09T21:43:02.931+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / createTest] - New Test created. Name: Test Name 5 - description: Test Description 5 - Timestamp: 2019-10-09T21:43:02.931+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTag / <init>] - New tag added. Name: Tag for test5 - description: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / assignTags] - Assigned tag(s): [LnReporter.models.NTag;@15ca7889
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setCategory] - Set Test 'Test Name 5' category toCategory 5
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.932+02:00 - Status: INFO - message: Info message for test 5 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 5. Timestamp: 2019-10-09T21:43:02.932+02:00 - status: INFO - message: Info message for test 5 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 5' status to 'INFO'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.932+02:00, test execution time: 0d 0h 0m 0s+1ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.933+02:00 - Status: WARN - message: Warning message from Test5 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 5. Timestamp: 2019-10-09T21:43:02.933+02:00 - status: WARN - message: Warning message from Test5 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 5' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.933+02:00, test execution time: 0d 0h 0m 0s+2ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.935+02:00 - Status: PASS - message: pass message for test 5 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 5. Timestamp: 2019-10-09T21:43:02.935+02:00 - status: PASS - message: pass message for test 5 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 5' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.935+02:00, test execution time: 0d 0h 0m 0s+4ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.937+02:00 - Status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 5
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 5. Timestamp: 2019-10-09T21:43:02.937+02:00 - status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 5
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 5' status to 'FATAL'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.937+02:00, test execution time: 0d 0h 0m 0s+6ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / <init>] - New Test added. Name: Test Name 6 - description: Test Description 6 - Test Start Time: 2019-10-09T21:43:02.939+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / createTest] - New Test created. Name: Test Name 6 - description: Test Description 6 - Timestamp: 2019-10-09T21:43:02.939+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTag / <init>] - New tag added. Name: Tag for test6 - description: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / assignTags] - Assigned tag(s): [LnReporter.models.NTag;@5609159b
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setCategory] - Set Test 'Test Name 6' category toCategory 6
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.940+02:00 - Status: INFO - message: Info message for test 6 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 6. Timestamp: 2019-10-09T21:43:02.940+02:00 - status: INFO - message: Info message for test 6 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 6' status to 'INFO'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.940+02:00, test execution time: 0d 0h 0m 0s+1ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.942+02:00 - Status: WARN - message: Warning message from Test6 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 6. Timestamp: 2019-10-09T21:43:02.942+02:00 - status: WARN - message: Warning message from Test6 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 6' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.942+02:00, test execution time: 0d 0h 0m 0s+3ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.944+02:00 - Status: PASS - message: pass message for test 6 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 6. Timestamp: 2019-10-09T21:43:02.944+02:00 - status: PASS - message: pass message for test 6 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 6' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.944+02:00, test execution time: 0d 0h 0m 0s+5ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.947+02:00 - Status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 6
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 6. Timestamp: 2019-10-09T21:43:02.947+02:00 - status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 6
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 6' status to 'FATAL'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.947+02:00, test execution time: 0d 0h 0m 0s+8ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / <init>] - New Test added. Name: Test Name 7 - description: Test Description 7 - Test Start Time: 2019-10-09T21:43:02.950+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / createTest] - New Test created. Name: Test Name 7 - description: Test Description 7 - Timestamp: 2019-10-09T21:43:02.950+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTag / <init>] - New tag added. Name: Tag for test7 - description: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / assignTags] - Assigned tag(s): [LnReporter.models.NTag;@740773a3
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setCategory] - Set Test 'Test Name 7' category toCategory 7
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.953+02:00 - Status: INFO - message: Info message for test 7 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 7. Timestamp: 2019-10-09T21:43:02.953+02:00 - status: INFO - message: Info message for test 7 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 7' status to 'INFO'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.953+02:00, test execution time: 0d 0h 0m 0s+3ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.961+02:00 - Status: WARN - message: Warning message from Test7 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 7. Timestamp: 2019-10-09T21:43:02.961+02:00 - status: WARN - message: Warning message from Test7 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 7' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.961+02:00, test execution time: 0d 0h 0m 0s+11ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.966+02:00 - Status: PASS - message: pass message for test 7 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 7. Timestamp: 2019-10-09T21:43:02.966+02:00 - status: PASS - message: pass message for test 7 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 7' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.966+02:00, test execution time: 0d 0h 0m 0s+16ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.974+02:00 - Status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 7
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 7. Timestamp: 2019-10-09T21:43:02.974+02:00 - status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 7
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 7' status to 'FATAL'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.974+02:00, test execution time: 0d 0h 0m 0s+24ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / <init>] - New Test added. Name: Test Name 8 - description: Test Description 8 - Test Start Time: 2019-10-09T21:43:02.979+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / createTest] - New Test created. Name: Test Name 8 - description: Test Description 8 - Timestamp: 2019-10-09T21:43:02.979+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTag / <init>] - New tag added. Name: Tag for test8 - description: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / assignTags] - Assigned tag(s): [LnReporter.models.NTag;@3943a2be
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setCategory] - Set Test 'Test Name 8' category toCategory 8
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.981+02:00 - Status: INFO - message: Info message for test 8 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 8. Timestamp: 2019-10-09T21:43:02.981+02:00 - status: INFO - message: Info message for test 8 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 8' status to 'INFO'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.981+02:00, test execution time: 0d 0h 0m 0s+2ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.983+02:00 - Status: WARN - message: Warning message from Test8 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 8. Timestamp: 2019-10-09T21:43:02.983+02:00 - status: WARN - message: Warning message from Test8 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 8' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.983+02:00, test execution time: 0d 0h 0m 0s+4ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.988+02:00 - Status: PASS - message: pass message for test 8 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 8. Timestamp: 2019-10-09T21:43:02.988+02:00 - status: PASS - message: pass message for test 8 - screenshot: null - Exception: null
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 8' status to 'WARN'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.988+02:00, test execution time: 0d 0h 0m 0s+9ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:02.993+02:00 - Status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 8
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 8. Timestamp: 2019-10-09T21:43:02.993+02:00 - status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 8
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 8' status to 'FATAL'
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:02.993+02:00, test execution time: 0d 0h 0m 0s+14ms
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTest / <init>] - New Test added. Name: Test Name 9 - description: Test Description 9 - Test Start Time: 2019-10-09T21:43:02.998+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NReport / createTest] - New Test created. Name: Test Name 9 - description: Test Description 9 - Timestamp: 2019-10-09T21:43:02.998+02:00
+2019-10-09 21:43:02 - [INFO ][nReporter.models.NTag / <init>] - New tag added. Name: Tag for test9 - description: null
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NTest / assignTags] - Assigned tag(s): [LnReporter.models.NTag;@41c2284a
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NTest / setCategory] - Set Test 'Test Name 9' category toCategory 9
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:03.000+02:00 - Status: INFO - message: Info message for test 9 - screenshot: null - Exception: null
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 9. Timestamp: 2019-10-09T21:43:03.000+02:00 - status: INFO - message: Info message for test 9 - screenshot: null - Exception: null
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 9' status to 'INFO'
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:03.000+02:00, test execution time: 0d 0h 0m 0s+2ms
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:03.001+02:00 - Status: WARN - message: Warning message from Test9 - screenshot: null - Exception: null
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 9. Timestamp: 2019-10-09T21:43:03.001+02:00 - status: WARN - message: Warning message from Test9 - screenshot: null - Exception: null
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 9' status to 'WARN'
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:03.001+02:00, test execution time: 0d 0h 0m 0s+3ms
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:03.002+02:00 - Status: PASS - message: pass message for test 9 - screenshot: null - Exception: null
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 9. Timestamp: 2019-10-09T21:43:03.002+02:00 - status: PASS - message: pass message for test 9 - screenshot: null - Exception: null
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 9' status to 'WARN'
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:03.002+02:00, test execution time: 0d 0h 0m 0s+4ms
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NStep / <init>] - New result added. Timestamp: 2019-10-09T21:43:03.005+02:00 - Status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 9
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NTest / logStepResult] - Added Result to test: Test Name 9. Timestamp: 2019-10-09T21:43:03.005+02:00 - status: FATAL - message: Fatal Message - screenshot: null - Exception: java.lang.Exception: Fatal Error on test 9
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NTest / logStepResult] - Updated test 'Test Name 9' status to 'FATAL'
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NTest / setEndTime] - End time: 2019-10-09T21:43:03.005+02:00, test execution time: 0d 0h 0m 0s+7ms
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NReport / setEndTime] - Report end time: 2019-10-09T21:43:03.005+02:00
+2019-10-09 21:43:03 - [INFO ][nReporter.models.NReport / flush] - Created report: C:\n-reporter\.\Reports\STAN project.html
