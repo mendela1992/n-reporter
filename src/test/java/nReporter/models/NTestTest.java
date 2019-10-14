@@ -179,8 +179,10 @@ class NTestTest {
 
     @Test
     void getTags() {
-        test.assignTags (new NTag ("taggy", null));
+        test.assignTags ("taggs", "Dick");
         assertNotEquals (0, test.getTags ().size ());
+        assertEquals ("Dick", test.getTags ().get (1));
+        assertEquals ("taggs", test.getTags ().get (0));
     }
 
     @Test

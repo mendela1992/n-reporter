@@ -4,14 +4,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.nelsonkelechi</groupId>
+    <groupId>com.github.mendela1992</groupId>
     <artifactId>nreporter</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>N-Reporter</name>
-    <description>NReporter is an automation report tool</description>
-    <url>http://www.nelsonKelechi.com</url>
+    <description>NReporter is an JAVA automation report tool</description>
+    <url>http://github.com/mendela1992/n-reporter</url>
 
     <licenses>
         <license>
@@ -21,8 +21,19 @@
         </license>
     </licenses>
 
+    <developers>
+        <developer>
+            <name>Nelson Dick Kelechi</name>
+            <email>ndick4@gmail.com</email>
+            <organization>com.github.mendela1992</organization>
+            <organizationUrl>http://github.com/mendela1992/</organizationUrl>
+        </developer>
+    </developers>
+
     <scm>
-        <url>https://mendela92@bitbucket.org/reserach_n_development/n-reporter.git</url>
+        <connection>scm:git:git://github.com/mendela1992/n-reporter.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:mendela1992/n-reporter.git</developerConnection>
+        <url>https://github.com/mendela1992/n-reporter/tree/master</url>
     </scm>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -151,17 +162,20 @@
         </plugins>
     </build>
 
-    <reporting>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-javadoc-plugin</artifactId>
-                <version>3.1.0</version>
-                <configuration>
-                    <stylesheetfile>${basedir}/src/main/javadoc/stylesheet.css</stylesheetfile>
-                    <show>public</show>
-                </configuration>
-            </plugin>
-        </plugins>
-    </reporting>
+    <pluginRepositories>
+        <pluginRepository>
+            <id>Maven-Artifactory-Plugin</id>
+            <url>https://jcenter.bintray.com</url>
+        </pluginRepository>
+    </pluginRepositories>
+
+    <distributionManagement>
+        <repository>
+            <uniqueVersion>false</uniqueVersion>
+            <id>N-Reporter</id>
+            <name>Nelson</name>
+            <url>https://jcenter.bintray.com</url>
+            <layout>default</layout>
+        </repository>
+    </distributionManagement>
 </project>

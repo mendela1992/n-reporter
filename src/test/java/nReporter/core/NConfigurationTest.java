@@ -10,34 +10,32 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class NConfigurationTest {
 
-    private String templatePath = "C:\\Projects\\n-reporter\\src\\main\\resources\\templates\\report.flth";
+    private String templatePath = "C:\\n-reporter\\src\\main\\resources\\templates\\report.ftlh";
+
     @Test
     void setReportTemplate() throws IOException {
-        try {
-            NConfiguration.getInstance ( templatePath).setReportTemplate ("nelson");
-        } catch (NullPointerException e) {
-            assertNull (e.getMessage ( ), "Expected Null Pointer Exception");
-        }
-
+        NConfiguration.getInstance (templatePath);
+        assertNotNull (NConfiguration.getInstance (templatePath), "Expected instance of NcConfiguration when loading custom template.");
     }
 
     @Test
-    void setReportTemplate1() throws NullPointerException {
-        try {
-            NConfiguration.getInstance ( templatePath).setReportTemplate ("/templates");
-        } catch (IOException e) {
-            assertNull (e.getCause ( ), "Expected Null Pointer Exception");
-        }
-
+    void setReportTemplate1() throws IOException {
+        NConfiguration.getInstance ( );
+        assertNotNull (NConfiguration.getInstance (), "Expected an instance of NConfiguration when loading default template.");
     }
 
     @Test
     void getReportTemplate() throws NullPointerException, IOException {
-        assertNotNull (NConfiguration.getInstance ( templatePath).getReportTemplate ( ), "Report Template should be null.");
+        assertNotNull (NConfiguration.getInstance (templatePath).getReportTemplate ( ), "Report Template should be null.");
     }
 
     @Test
     void getInstance() throws IOException {
-        assertNotNull (NConfiguration.getInstance ( templatePath), "Insatnce should not be not.");
+        assertNotNull (NConfiguration.getInstance (templatePath), "Insatnce should not be not.");
+    }
+
+    @AfterEach
+    public void tearDown(){
+        NConfiguration.close ();
     }
 }

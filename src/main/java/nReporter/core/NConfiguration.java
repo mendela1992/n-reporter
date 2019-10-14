@@ -41,11 +41,17 @@ public class NConfiguration {
      *
      * @param reportTemplatePath Report Template path
      */
-    public void setReportTemplate(String reportTemplatePath) throws IOException, NullPointerException {
-        File templateFile = new File (reportTemplatePath);
-        this.cfg.setDirectoryForTemplateLoading (new File (templateFile.getParent ( )));
-        this.reportTemplate = this.cfg.getTemplate (templateFile.getName ( ));
-        nLogger.info ("Report template path: " + templateFile);
+    public void setReportTemplate(String reportTemplatePath) throws IOException {
+        if (reportTemplatePath == null) {
+            this.cfg.setClassLoaderForTemplateLoading (this.getClass ( ).getClassLoader ( ), "./templates");
+            this.reportTemplate = this.cfg.getTemplate ("report.ftlh");
+            nLogger.info ("Loaded default report template.");
+        } else {
+            File templateFile = new File (reportTemplatePath);
+            this.cfg.setDirectoryForTemplateLoading (new File (templateFile.getParent ( )));
+            this.reportTemplate = this.cfg.getTemplate (templateFile.getName ( ));
+            nLogger.info ("Loaded report template from: " + templateFile);
+        }
     }
 
     /**
@@ -56,7 +62,16 @@ public class NConfiguration {
      */
     public static NConfiguration getInstance(String templatePath) throws IOException {
         if (nConfiguration == null)
-            nConfiguration = new NConfiguration ( templatePath);
+            nConfiguration = new NConfiguration (templatePath);
+        return nConfiguration;
+    }
+
+    public static NConfiguration getInstance() throws IOException {
+        return getInstance (null);
+    }
+
+    public static NConfiguration close(){
+        nConfiguration = null;
         return nConfiguration;
     }
 }

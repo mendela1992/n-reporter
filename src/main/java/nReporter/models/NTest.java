@@ -20,7 +20,7 @@ public class NTest extends Base {
     private List<NStep> stepResults;
     private Status testStatus;
     private LinkedHashMap<String, Integer> testStats;
-    private List<NTag> tags;
+    private List<String> tags;
     private String testExecutionTime, category;
 
     NTest(String testName, String testDescription, DateTime starTime) {
@@ -359,7 +359,7 @@ public class NTest extends Base {
      *
      * @return Collection of tags
      */
-    public List<NTag> getTags() {
+    public List<String> getTags() {
         return tags;
     }
 
@@ -387,10 +387,10 @@ public class NTest extends Base {
      * @param tags Tag(s)
      * @return Current Test instance
      */
-    public NTest assignTags(NTag... tags) {
+    public NTest assignTags(String... tags) {
         nLogger.debug ("Assigning tag(s)...");
         this.tags.addAll (asList (tags));
-        nLogger.info ("Assigned tag(s): " +tags.toString ());
+        nLogger.info ("Assigned tag(s): " +tags);
         return this;
     }
 }

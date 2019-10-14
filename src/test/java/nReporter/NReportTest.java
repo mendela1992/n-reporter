@@ -2,15 +2,13 @@ package nReporter;
 
 import freemarker.template.TemplateException;
 import nReporter.models.NReport;
-import nReporter.models.NTag;
-import nReporter.models.NTest;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
 
 class NReportTest {
-    private String templatePath = "C:\\Projects\\n-reporter\\src\\main\\resources\\templates\\report.ftlh";
+    private String templatePath = "C:\\n-reporter\\src\\main\\resources\\templates\\report.ftlh";
     @BeforeEach
     void setUp() {
     }
@@ -21,7 +19,7 @@ class NReportTest {
         report.setReportName ("STAN project").setSystemInfo ("Version", "1.4.0.30");
         report.createTest ("Test name", "Test Description")
                 .setCategory ("Regression")
-                .assignTags (new NTag ("tag 1", null), new NTag ("Tag2", null));
+                .assignTags ("tag 1", "Tag2");
         report.pass ("Pass message");
         report.pass ("Pass with screenshot", "https://dummyimage.com/600x400/000/fff&text=Passed__2.png");
 //Thread.sleep (3000);
@@ -31,7 +29,7 @@ class NReportTest {
         report.skip ("Skipping");
 
         for (int i = 0; i < 10; i++) {
-            report.createTest ("Test Name "+i, "Test Description " + i).assignTags (new NTag ("Tag for test" + i, null))
+            report.createTest ("Test Name "+i, "Test Description " + i).assignTags ("Tag for test" + i, null)
                     .setCategory ("Category " + i).info ("Info message for test "+ i).warning ("Warning message from Test" + i).pass ("pass message for test "+ i)
                     .fatal ("Fatal Message", null, new Exception ("Fatal Error on test "+ i));
 //            Thread.sleep (4000);

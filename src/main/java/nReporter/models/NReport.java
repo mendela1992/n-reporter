@@ -22,7 +22,7 @@ import static nReporter.helpers.Status.*;
 
 public class NReport extends Base {
 
-    private String reportDestinationFolder;
+    private static String reportDestinationFolder;
     private DateTime startTime, endTime;
     private NTest currentTest;
     private String reportName, projectName, user;
@@ -35,7 +35,7 @@ public class NReport extends Base {
     public NReport(String reportDestinationFolder, String templatePath) throws IOException {
         nLogger.debug ("initialising Report...");
         this.configuration = NConfiguration.getInstance (templatePath);
-        this.reportDestinationFolder = reportDestinationFolder;
+        NReport.reportDestinationFolder = reportDestinationFolder;
         boolean mkdirs = new File (reportDestinationFolder).mkdirs ( );
         System.setProperty ("reportDestinationFolder", reportDestinationFolder);
         this.root = new HashMap<> ( );
@@ -65,10 +65,6 @@ public class NReport extends Base {
      */
     public NTest createTest(String testName, String testDescription) {
         nLogger.debug ("Creating test...");
-        if (projectName.isEmpty ( )) {
-            nLogger.error ("Project name missing.");
-            throw new NullPointerException ("Project name missing");
-        }
         DateTime now = DateTime.now ( );
         this.setStartTime (now);
         this.currentTest = new NTest (testName, testDescription, now);
@@ -87,7 +83,13 @@ public class NReport extends Base {
     /**
      * Flush method writes your results the report file
      */
-    public void flush(boolean displayReport) throws IOException, TemplateException {
+    public void flush(boolean displayReport) throws IOException, TemplateException, NullPointerException {
+        if (projectName.isEmpty ( )) {
+            nLogger.error ("Project name missing.");
+            throw new NullPointerException ("Project name missing");
+        }
+        if (currentTest == null)
+            throw new NullPointerException ("No instance of current test.");
         // Set report end time.
         this.setEndTime (currentTest.getEndTime ( ));
         // Tests Stats
@@ -495,6 +497,4 @@ public class NReport extends Base {
         this.currentTest.logStepResult (INFO, message, screenshotPath, null);
         return this;
     }
-
-
 }
