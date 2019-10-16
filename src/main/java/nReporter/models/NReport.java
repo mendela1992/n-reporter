@@ -30,17 +30,18 @@ public class NReport extends Base {
     private LinkedHashMap<String, String> environments;
     private NConfiguration configuration;
     private HashMap<Object, Object> root;
+    private  File report;
 
 
     public NReport(String reportDestinationFolder, String templatePath) throws IOException {
         nLogger.debug ("initialising Report...");
         this.configuration = NConfiguration.getInstance (templatePath);
         NReport.reportDestinationFolder = reportDestinationFolder;
-        boolean mkdirs = new File (reportDestinationFolder).mkdirs ( );
+        boolean mkdirs = new File (reportDestinationFolder).mkdirs ();
         System.setProperty ("reportDestinationFolder", reportDestinationFolder);
-        this.root = new HashMap<> ( );
-        this.tests = new LinkedHashMap<> ( );
-        this.environments = new LinkedHashMap<> ( );
+        this.root = new HashMap<> ();
+        this.tests = new LinkedHashMap<> ();
+        this.environments = new LinkedHashMap<> ();
         nLogger.info ("Report initialised.");
     }
 
@@ -49,10 +50,10 @@ public class NReport extends Base {
         this.configuration = NConfiguration.getInstance (templatePath);
         this.reportDestinationFolder = "";
         System.setProperty ("reportDestinationFolder", reportDestinationFolder);
-        boolean mkdirs = new File (reportDestinationFolder).mkdirs ( );
-        this.root = new HashMap<> ( );
-        this.tests = new LinkedHashMap<> ( );
-        this.environments = new LinkedHashMap<> ( );
+        boolean mkdirs = new File (reportDestinationFolder).mkdirs ();
+        this.root = new HashMap<> ();
+        this.tests = new LinkedHashMap<> ();
+        this.environments = new LinkedHashMap<> ();
         nLogger.info ("Report initialised.");
     }
 
@@ -65,38 +66,36 @@ public class NReport extends Base {
      */
     public NTest createTest(String testName, String testDescription) {
         nLogger.debug ("Creating test...");
-        DateTime now = DateTime.now ( );
+        DateTime now = DateTime.now ();
         this.setStartTime (now);
         this.currentTest = new NTest (testName, testDescription, now);
-        this.tests.put ("test" + this.tests.size ( ), currentTest);
+        this.tests.put ("test" + this.tests.size (), currentTest);
         nLogger.info ("New Test created. Name: " + testName + " - description: " + testDescription + " - Timestamp: " + now);
         return currentTest;
     }
 
-    /**
-     * Flush method writes your results the report file
-     */
-    public void flush() throws IOException, TemplateException {
-        this.flush (false);
-    }
+
 
     /**
      * Flush method writes your results the report file
+     * @throws IOException Report folder path is not found.
+     * @throws TemplateException If template not found.
+     * @throws NullPointerException if project name is not found.
      */
-    public void flush(boolean displayReport) throws IOException, TemplateException, NullPointerException {
-        if (projectName.isEmpty ( )) {
+    public void flush() throws IOException, TemplateException, NullPointerException {
+        if (projectName.isEmpty ()) {
             nLogger.error ("Project name missing.");
             throw new NullPointerException ("Project name missing");
         }
         if (currentTest == null)
             throw new NullPointerException ("No instance of current test.");
         // Set report end time.
-        this.setEndTime (currentTest.getEndTime ( ));
+        this.setEndTime (currentTest.getEndTime () == null ? DateTime.now () : currentTest.getEndTime ());
         // Tests Stats
-        this.currentTest.getTestStats ( ).put ("Total", this.currentTest.getStepResults ( ).size ( ));
-        asList (Status.values ( )).forEach ((Status testStatus) -> {
-            int count = (int) this.currentTest.getStepResults ( ).stream ( ).filter (step -> testStatus.isDisplayed ( ) && step.getStatus ( ).equals (testStatus)).count ( );
-            this.currentTest.getTestStats ( ).put (testStatus.name ( ), count);
+        this.currentTest.getTestStats ().put ("Total", this.currentTest.getStepResults ().size ());
+        asList (Status.values ()).forEach ((Status testStatus) -> {
+            int count = (int) this.currentTest.getStepResults ().stream ().filter (step -> testStatus.isDisplayed () && step.getStatus ().equals (testStatus)).count ();
+            this.currentTest.getTestStats ().put (testStatus.name (), count);
         });
 
         // Output variables for reporting
@@ -105,27 +104,32 @@ public class NReport extends Base {
                 .setRoot ("tests", this.tests)
                 .setRoot ("dashboard", new Dashboard (this))
                 .setRoot ("environments", this.environments)
-                .setRoot ("listColours", this.getColourConfigurations ( ));
+                .setRoot ("listColours", this.getColourConfigurations ());
 
         nLogger.debug ("Creating html Report...");
         // Preparing report outputting
-        File report = new File (Objects.requireNonNull (this.getReportPath ( )));
+        report = new File (Objects.requireNonNull (this.getReportPath ()));
         FileWriter fileWriter = new FileWriter (report);
-        this.configuration.getReportTemplate ( ).process (this.root, fileWriter);
-        fileWriter.flush ( );
-        fileWriter.close ( );
-        nLogger.info ("Created report: " + report.getAbsolutePath ( ));
-        if (displayReport) {
-            Desktop desktop = Desktop.getDesktop ( );
-            if (report.exists ( )) {
-                try {
-                    desktop.open (report);
-                    nLogger.info ("Opened report on default browser.");
-                } catch (IOException e) {
-                    e.printStackTrace ( );
-                }
+        this.configuration.getReportTemplate ().process (this.root, fileWriter);
+        fileWriter.flush ();
+        fileWriter.close ();
+        nLogger.info ("Created report: " + report.getAbsolutePath ());
+    }
+
+    /**
+     * Open HTML report generated.
+     */
+    public void openReport() {
+        Desktop desktop = Desktop.getDesktop ();
+        if (report.exists ()) {
+            try {
+                desktop.open (report);
+                nLogger.info ("Opened report on default browser.");
+            } catch (IOException e) {
+                e.printStackTrace ();
             }
         }
+
     }
 
     /*Getters and Setters*/
@@ -166,6 +170,7 @@ public class NReport extends Base {
      * Set Report start time.
      *
      * @param startTime start time.
+     * @return current Report instance.
      */
     public NReport setStartTime(DateTime startTime) {
         if (this.startTime == null) {
@@ -189,6 +194,7 @@ public class NReport extends Base {
      * Set Report end time.
      *
      * @param endTime end time.
+     * @return current report instance.
      */
     public NReport setEndTime(DateTime endTime) {
         this.endTime = endTime;
@@ -279,8 +285,8 @@ public class NReport extends Base {
      * @return path to report.
      */
     private String getReportPath() {
-        String report = !this.getReportName ( ).contains (".html") ? this.getReportName ( ).concat (".html") : this.getReportName ( );
-        return this.getReportDestinationFolder ( ).concat (report);
+        String report = !this.getReportName ().contains (".html") ? this.getReportName ().concat (".html") : this.getReportName ();
+        return this.getReportDestinationFolder ().concat (report);
     }
 
     /**
@@ -387,7 +393,8 @@ public class NReport extends Base {
      * Log fail status message with current time as timestamp and a screenshot.
      *
      * @param message        fail message
-     * @param screenshotPath fail screenshot path
+     * @param screenshotPath fail screenshot path.
+     * @param t Exception to be displayed.
      * @return Current instance of Test
      */
     public NReport fail(String message, String screenshotPath, Throwable t) {
@@ -446,6 +453,7 @@ public class NReport extends Base {
      *
      * @param message        fatal message
      * @param screenshotPath fatal screenshot path
+     * @param t Exception to be displayed.
      * @return current instance of Test
      */
     public NReport fatal(String message, String screenshotPath, Throwable t) {

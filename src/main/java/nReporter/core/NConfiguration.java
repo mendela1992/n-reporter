@@ -38,8 +38,8 @@ public class NConfiguration {
 
     /**
      * SetReport Template
-     *
      * @param reportTemplatePath Report Template path
+     * @throws IOException if template path not foumd.
      */
     public void setReportTemplate(String reportTemplatePath) throws IOException {
         if (reportTemplatePath == null) {
@@ -57,6 +57,7 @@ public class NConfiguration {
     /**
      * Get configuration instance
      *
+     * @param templatePath Template path
      * @return Configuration instance
      * @throws IOException if template file is not found
      */

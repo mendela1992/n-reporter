@@ -37,6 +37,6 @@ class NReportTest {
 
 
         // Flush report
-        report.flush (false);
+        report.flush ();
     }
 }

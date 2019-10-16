@@ -137,6 +137,7 @@ public class NTest extends Base {
      *
      * @param message        fail message
      * @param screenshotPath fail screenshot path
+     * @param t Exception to be displayed.
      * @return Current instance of Test
      */
     public NTest fail(String message, String screenshotPath, Throwable t) {
@@ -195,6 +196,7 @@ public class NTest extends Base {
      *
      * @param message        fatal message
      * @param screenshotPath fatal screenshot path
+     * @param t Exception to be displayed.
      * @return current instance of Test
      */
     public NTest fatal(String message, String screenshotPath, Throwable t) {

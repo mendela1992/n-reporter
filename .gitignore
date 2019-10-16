@@ -28,3 +28,4 @@ hs_err_pid*
 *.html
 /Reports
 *.iml
+/src/main/resources

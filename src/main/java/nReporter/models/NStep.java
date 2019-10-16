@@ -26,6 +26,7 @@ public class NStep {
      * @param message        Result Message
      * @param timestamp      Result Timestamp
      * @param screenshotPath Result screenshot path
+     * @param exception Exception to be displayed.
      */
     public NStep(DateTime timestamp, Status status, String message, String screenshotPath, Throwable exception) {
         nLogger.debug ("Adding new step...");
